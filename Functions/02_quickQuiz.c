@@ -1,4 +1,8 @@
 #include <stdio.h>
+/*this code basically shows how to call functions one by one
+and how function proto-types are needed in our programme
+*/
+
 void good_morning();
 void good_afternoon();
 void good_night();
