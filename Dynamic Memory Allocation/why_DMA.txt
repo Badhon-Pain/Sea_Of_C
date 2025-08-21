@@ -9,3 +9,19 @@ allocates memory on the heap. The heap is much larger, so large arrays
 can be handled safely, and memory can be freed using free() to avoid 
 memory leaks. Therefore, VLAs are fine for small arrays, but for large 
 arrays or portable programs, using malloc() is the best practice.
+
+
+*Calloc : In C, calloc() is used to allocate memory dynamically
+on the heap, similar to malloc(), but with two key differences. 
+First, it takes two arguments: the number of elements and the size of 
+each element. Second, unlike malloc(), calloc() initializes all allocated 
+memory to zero, which can help prevent garbage values in arrays or 
+structures. This makes it useful when you need a clean, zero-initialized 
+memory block for arrays or matrices.
+
+*Realloc : realloc() is used to resize a previously allocated memory 
+block. It can increase or decrease the size of memory allocated by 
+malloc() or calloc(). If the new size is larger, realloc() may move 
+the memory block to a new location and copy the existing data 
+automatically. This is useful when the array size is not known 
+initially or needs to grow/shrink during runtime.
