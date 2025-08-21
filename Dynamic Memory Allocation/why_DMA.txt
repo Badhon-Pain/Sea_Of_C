@@ -1,0 +1,11 @@
+When we write int arr[n]; in 'C' and take n as input, this is called 
+a Variable Length Array (VLA). VLAs are allocated on the stack, 
+which is usually small, so if n is very large, the program may crash 
+or cause a segmentation fault. Additionally, not all compilers 
+support VLAs—for example, GCC and Clang support them from C99 onwards,
+but MSVC does not. This can cause differences in behavior across systems.
+For larger arrays or to ensure portability, we use malloc(), which 
+allocates memory on the heap. The heap is much larger, so large arrays 
+can be handled safely, and memory can be freed using free() to avoid 
+memory leaks. Therefore, VLAs are fine for small arrays, but for large 
+arrays or portable programs, using malloc() is the best practice.
