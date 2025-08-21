@@ -16,7 +16,7 @@
 </p>
 
 ---
-> **"The only way to learn a new programming language is by writing programs in it."** - Dennis Ritchie (Creator of C)
+> **"The only way to learn a new programming language is by writing programs in it."** - Dennis Ritchie 
 
 Welcome to the digital archive of my first steps into the world of programming! This repository is a chronological log of my 1st-semester journey learning C, from the very first `printf("Hello, World!");` to more complex data structures and algorithms. It's a testament to the grind, the "Aha!" moments, and the bugs that almost drove me crazy.
 
