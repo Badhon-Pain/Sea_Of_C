@@ -7,14 +7,10 @@ int main()
     scanf("%d", &n);
     float *ptr;
     ptr = (float *)malloc(n * sizeof(float));
-    for (int i = 0; i < n; i++)
-    {
-        scanf("%f", &ptr[i]);
-    }
-    for (int i = 0; i < n; i++)
-    {
-        printf("%.1f ", ptr[i]);
-    }
+    ptr[0] = 3.98;
     free(ptr);
+    printf("%.2f", ptr[0]); // you will see garbage value or zero
+    // but we thought that it'll be 3.98
+
     return 0;
 }
