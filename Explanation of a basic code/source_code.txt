@@ -69,3 +69,6 @@ telling the operating system "Everything went okay!"
 __________________________________________________________________
 
 Basically, these parts are the basic and must required parts of a 'C' code.
+
+            ~Explanation inspired by :   Prof. Dr. Ashikur Rahman 
+                                         Department of CSE, BUET
